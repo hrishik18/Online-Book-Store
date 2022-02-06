@@ -7,30 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mystyle.css">
     <title>Home Page</title>
+<style>
+    ul {
+        list-style-type: none;
+        margin: 5px;
+        padding: 2px;
+    }
+
+    li {
+        display: inline;
+        margin-left: 20px;
+    }
+</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <header class="header">
+
+        <div class="head">
+            <h3><a href="./home.html">Book Store</a></h3>
+            <form action="">
+                <input type="search" name="" placeholder="Search...here" id="search-box">
+                <label for="search-box"></label>
+                <i class="fa-light fa-magnifying-glass"></i>
+            </form>
+        </div>
+
+    </header>
+    <hr>
     <div>
         <ul>
-            
             <li><a href="./home.html">Home</a></li>
-            <li><a href="./author/author_list.html">Author List</a></li>
+            <li><a href="./author/author_list.html">Authors</a></li>
             <li><a href="./forms/user.html">Login/Register</a></li>
             <li><a href="./cart.html">Cart</a></li>
-
         </ul>
     </div>
-
-    <div>
-        <hr />
-        <br>
-        <h1>Online Book Store</h1>
-        <br>
-        <br>
-        <hr>
-    </div>
-
-
 </body>
 <table>
     <tr>
