@@ -1,0 +1,10 @@
+.header .head{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 100px;
+  height: 100px; */
+  padding: 1.5rem 9%;
+  border: 1px solid blue;
+  background-color: yellow;
+}
