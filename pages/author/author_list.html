@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,71 +10,94 @@
         aside {
             width: 30%;
             padding-left: 15px;
-            margin-left: 15px;
+            margin-right: 25px;
             float: right;
             font-style: italic;
             background-color: lightgray;
         }
-    </style>
-<style>
-    ul {
-        list-style-type: none;
-        margin: 5px;
-        padding: 2px;
-    }
 
-    li {
-        display: inline;
-        margin-left: 20px;
-    }
-</style>
-<link rel="stylesheet" href="style.css">
+        ul {
+            list-style-type: none;
+            margin: 5px;
+            padding: 2px;
+        }
+
+        li {
+            display: inline;
+            margin-left: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 
-<body>
+<body style="background-image: linear-gradient(45deg, #8BDB81, #FFFEA9);height:2000px;">
     <header class="header">
-
-        <div class="head">
-            <h3><a href="./home.html">Book Store</a></h3>
-            <form action="">
-                <input type="search" name="" placeholder="Search...here" id="search-box">
-                <label for="search-box"></label>
-                <i class="fa-light fa-magnifying-glass"></i>
+        <div class="head1">
+            <h1><a href="./home.html">Book Store</a></h1>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <button>
+                            <a href="../home.html">Home</a>
+                        </button>
+                    </li>
+                    <li><button><a href="./author/author_list.html">Authors</a></button></li>
+                    <!-- <li><button><a href="./forms/user.html">Login/Register</a></button></li> -->
+                    <li><button><a href="../cart.html">Cart</a></button></li>
+                </ul>
+            </div>
+            <form action="" class="search-form">
+                <input style="padding: 15px;border-radius: 5%;" type="search" name="" placeholder="search here..."
+                    id="search-box">
+                <label for="search-box" class="fas fa-search"></label>
             </form>
         </div>
-
     </header>
     <hr>
-    <div>
-        <ul>
-            <li><a href="../home.html">Home</a></li>
-            <li><a href="./author/author_list.html">Authors</a></li>
-            <li><a href="../forms/user.html">Login/Register</a></li>
-            <li><a href="../cart.html">Cart</a></li>
-        </ul>
-    </div>
-    <h1>List of Authors</h1>
+    <h1 style="padding: 15px;margin: 5px;">List of Authors</h1>
     <hr>
     <br>
     <dl>
         <aside>
-            We all have grown up reading books and novels of various genres. Everyone has a specific author which they like the
-            most. We all love them for different reasons whether it is for liking their way or writing or the characters they
+            We all have grown up reading books and novels of various genres. Everyone has a specific author which they
+            like
+            the
+            most. We all love them for different reasons whether it is for liking their way or writing or the characters
+            they
             make.
             Nonetheless, everyone has at least one favorite author they never get bored o
         </aside>
-        <img src="../../assets/tatu.jpg" alt="tatu_sir" width="200" height="200">
-        <dt><a href="./author.html">Tatsuyama   </a></dt>
-        <dd>- A renowned japanese writer </dd>
+        <div class="author_list">
+        <div class="author_card">
+            <img src="../../assets/tatu.jpg" alt="tatu_sir" width="200" height="200">
+            <div class="author">
+                <dt><a href="./author.html">Tatsuyama </a></dt>
+                <dd>- A renowned japanese writer </dd>
+            </div>
+        
+        </div>
         <br>
-        <img src="../../assets/mallu.jpg" alt="mallu_sir" width="200" height="200">
-        <dt>Mr. Malllu</dt>
-        <dd>- south indian drama actor & writer</dd>
+        <div class="author_card">
+            <img src="../../assets/mallu.jpg" alt="mallu_sir" width="200" height="200">
+            <div class="author">
+                <dt><a href="./author.html">Mr. Malllu </a></dt>
+                <dd>- south indian drama actor & writer </dd>
+            </div>
+        </div>
         <br>
-        <img src="../../assets/raju.jpg" alt="raju_sir" width="200" height="200">
-        <dt>Raju</dt>
-        <dd>- Aggresive politics writer</dd>
-    </dl>
-    
+        <div class="author_card">
+            <img src="../../assets/raju.jpg" alt="raju_sir" width="200" height="200">
+            <div class="author">
+                <dt><a href="./author.html">Raju Kaka </a></dt>
+                <dd>- Aggresive politics writer</dd>
+            </div>
+        </div>
+        <br>
+        </dl>
+        </div>
+
 </body>
+
 </html>

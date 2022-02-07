@@ -1,40 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Neonderthaw&family=Ubuntu:wght@300;400;500;700&display=swap");
 
-*{
-    font-family: 'Ubuntu', 'Neonderthaw';
-    margin:0; padding:0;
-    box-sizing: border-box;
-     border:none;
-    text-decoration: none;
-    text-transform: capitalize;
-    transition:all .2s linear;
-    transition:width none;
+* {
+  font-family: "Ubuntu", "Neonderthaw";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  transition: width none;
 }
-
-.header .head{
+html {
+  overflow-x: hidden;
+  scroll-padding-top: 5rem;
+  scroll-behavior: smooth;
+}
+.header .head1 {
   display: flex;
+  font-weight: bold;
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 9%;
-  border: 1px solid blue;
-  background-color: #fff;
+  border: 1px solid#264e2c;
+  background-color: #def1da;
+}
+.nav {
+  font-size: 25px;
+}
+.nav button {
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid rgb(16, 115, 145);
+  border-radius: 0.96 px;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 1px;
+  padding: 8.2px 44.6px;
+  text-transform: uppercase;
+  font-family: "Neonderthaw", sans-serif;
+  font-weight: 700;
 }
 
-html{
-    font-size: 80%;
-    overflow-x: hidden;
-    scroll-padding-top: 5rem;
-    scroll-behavior: smooth;
+.book_dis {
+  margin: 90px;
+  box-sizing: border-box;
+  border-width: 15px;
+  background-color: #ff8e00;
+  padding: 20px;
+  box-shadow: 56px;
+  border-radius: 5%;
 }
-
-html::-webkit-scrollbar{
-    width:1rem;
+.book_dis h3 {
+  margin: 10px;
+  color: aquamarine;
 }
-
-html::-webkit-scrollbar-track{
-    background:transparent;
+.book_dis h4 {
+  margin: 10px;
+  color: #753188;
 }
-
-html::-webkit-scrollbar-thumb{
-    background:var(--black);
+.book_dis p {
+  margin: 10px;
+  color: whitesmoke;
+  font-size: medium;
+  font-weight: 600;
+}
+.author_list {
+    display: flex;
+}
+.author_card {
+  align-items: center;
+  border-radius: 10%;
+  width: 250px;
+  padding: 15px;
+  margin-left: 20px;
+  background-color: rgb(128, 34, 128);
+  border: #def1da;
+  border-width: 20px;
+}
+.author_card img {
+  margin-left: 10px;
+  border-radius: 5%;
+  margin-bottom: 15px;
+}
+.author dt a {
+    padding: 30px;
+  margin-top: 100px;
+  font-weight: 900;
+  font-size: 20px;
+  color: #1fa81f;
+}
+.author dd {
+  margin: 10px;
+  padding: 2px;
+  font-size: 16px;
+  color: #f5ecef;
 }
