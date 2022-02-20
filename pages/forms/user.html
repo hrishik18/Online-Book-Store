@@ -6,35 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="bg-info text-white">
+
     <div>
         <hr />
         <br>
-        <h1><a href="../home.html"> Book Store</a></h1>
-        <br> 
+        <h1 class="mx-5"><a href="../home.html"> Book Store</a></h1>
+        <br>
         <hr>
     </div>
-    <br><br><br>
-    <h1>Login/Register</h1>
-    <hr>
     <br>
-    <p>Do you want to login or register as a new user!!</p>
-
-    <form>
-    <button type="button" id="Login" name="login" value="Login">
-    <label for="Login">Login</label></button>
-    <button type="button" id="Register" name="register" value="Register"> 
-    <label for="Register">Register</label></button>
-    </form>
-    <br><br>
-    <form>
-        <label for="username">Username</label><br>
-        <input type="text" id="username" name="username"><br>
-        <label for="password">Password</label><br>
-        <input type="text" id="password" name="password">
-        <input type="submit" value="Submit">
-    </form>
+    <h1 class="ml-5">Login/Register</h1>
+    <div class="container h5 ml-6 mt-4 mb-4  p-5 bg-primary text-white rounded">
+        <p class="h3 mb-5">Do you want to login or register as a new user!!</p>
+        <form>
+            <button class="btn btn-info active" type="button" id="Login" name="login" value="Login">
+                <label class="h4" for="Login">Login</label></button>
+            <button class="btn btn-info" type="button" id="Register" name="register" value="Register">
+                <label class="h4" for="Register">Register</label></button>
+        </form>
+        <br>
+        <form>
+            <label class="h4 font-weight-bold" for="username">Username</label><br>
+            <input class="input-group rounded w-25 p-1" type="text" id="username" name="username"><br>
+            <label class="h4 font-weight-bold" for="password">Password</label><br>
+            <input type="text" class="input-group rounded w-25 p-1" id="password" name="password"><br>
+            <input class="btn btn-success mt-3"  type="submit" value="Submit">
+        </form>
 </body>
+
 </html>
