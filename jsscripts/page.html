@@ -1,18 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <!-- Write a program to count the vowels and constants in the given sentence using the function.
-    Write a program to calculate the grade for N courses of M students.
-    Wrtie a program to find the 2nd largest no from the given array.
-    Write a program that checks whether the current year is a leap year and prints the next leap year based on the input.
-    Write program to implement various Dilog box -->
-<script src="./con_vow.js"></script>
-<script src="./grade.js"></script>
+    <button onclick="date()">Display</button>
+    <br>
+    <button onclick="fact()">factorial</button>
+    <br>
+    <button onclick="mul()">Multiplication Table</button>
+    <br>
+
+    <script>
+        function date() {
+            document.write(Date());
+        }
+        function fact() {
+            var n = prompt("Enter the value of n");
+            while (n < 0) //|| typeof n === 'string'
+            {
+                var n = prompt("Enter the positive numerical value of n");
+            }
+            var f = 1;
+            for (let i = 1; i <= n; i++) {
+                f = f * i;
+            }
+            document.write(`The factorial of ${n} is ${f}`);
+        }
+        function mul() {
+            var n = prompt("Enter the value of n");
+            while (n < 0) {
+                var n = prompt("Enter the positive numerical value of n");
+            }
+            var f = 1;
+            for (let i = 1; i <= 10; i++) {
+                document.write(` ${n} * ${i} = ${n * i} `);
+                document.write("<br>");
+            }
+
+        }
+    </script>
 </body>
+
 </html>
